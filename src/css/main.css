@@ -8,7 +8,9 @@
  * */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #353535;
   margin: 0;
   padding 0;
   box-sizing: border-box;
@@ -36,6 +38,7 @@ h1 {
 
 .parallax-bg-wrapper {
   height: 100vh;
+  min-height: 900px;
   position: relative;
 }
 .parallax-bg-wrapper::after {
@@ -44,6 +47,7 @@ h1 {
   top:0;
   left:0;
   height: 100vh;
+  min-height: 900px;
   width: 100vw;
   transform: translateZ(-1px) scale(2);
   background-size: cover;
@@ -67,14 +71,13 @@ h1 {
 
 p {
   background-color: white;
-  padding: 0px;
-  margin: 0px;
 }
 
 .parallax-fg-wrapper {
   display: flex;
   flex-direction: column;
   height: calc(100vh + 10vw);
+  min-height: 900px;
   margin: 0px;
   top: -10vw;
   position: relative;
@@ -92,7 +95,7 @@ p {
 
 .section-4 {
   top: -40vw;
-  height: 50vh;
+  height: calc(100vh + 20vw);
   border-bottom: none;
   padding-bottom: -200px;
 }
@@ -109,8 +112,8 @@ p {
 }
 
 h2 {
-  padding: 70px 20px 20px 20px;
-  margin: 0px;
+  padding: 2vw 20px;
+  margin: 2vw 0px;
   color: #0070c0;
   font-size: 3rem;
 }
@@ -129,12 +132,22 @@ h2 {
   height: 100%;
 }
 
+/* ABOUT */
+.about {
+  margin: 0px;
+  padding: 20px 50px;
+}
+
+
 /* CONTACT */
 .small-width {
   width: 600px;
   margin: 0px auto;
 }
+.address {
+}
 .contact {
+  padding: 0px;
   text-align: center;
 }
 .col-2-layout {
@@ -145,13 +158,16 @@ h2 {
 }
 .two-column p {
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 1.2rem;
 }
 /* SPENDEN */
 .center {
   text-align: center;
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 1.4rem;
+}
+.middle-font {
+  font-size: 1.7rem;
 }
 .small-font {
   font-size: 1.2rem;
