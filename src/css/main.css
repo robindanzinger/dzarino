@@ -8,12 +8,9 @@
  * */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.7rem;
   color: #353535;
   margin: 0;
   padding 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -21,14 +18,38 @@ html {
 
 /* MAIN SECTION */
 
-main {
+.container {
   height: 100vh;
+  width: 100vw;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 1px;
+  perspective: 100px;
   transform-style: preserve-3d;
+  box-sizing: border-box;
 }
 
+.parallax-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateZ(-60px) scale(1.6);
+  z-index: -1;
+  background-size: cover;
+}
+
+.parallax-fg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  top: -130px;
+  margin-bottom: -130px;
+  display: flex;
+  flex-direction: column;
+}
+.border-div {
+  border-bottom: 2px solid #0070C0;
+}
 h1 {
   padding: 80px;
   margin: 0px;
@@ -36,68 +57,24 @@ h1 {
   font-size: 3rem;
 }
 
-.parallax-bg-wrapper {
-  height: 100vh;
-  min-height: 900px;
-  position: relative;
-}
-.parallax-bg-wrapper::after {
-  content: " ";
-  position: absolute;
-  top:0;
-  left:0;
-  height: 100vh;
-  min-height: 900px;
-  width: 100vw;
-  transform: translateZ(-1px) scale(2);
-  background-size: cover;
-  z-index: -1;
-}
-.title-image::after {
+.title-image {
   background-image: url('/img/TitelBild.jpg');
+  border: 3px dashed red;
 }
 .projects-image {
-  top: -10vw;
-}
-.projects-image::after {
   background-image: url('/img/projekte.jpg');
+  border: 3px dashed yellow;
 }
 .help-image {
-  top: -20vw;
-}
-.help-image::after {
   background-image: url('/img/help2.jpg');
+  border: 3px dashed red;
 }
 
 p {
   background-color: white;
 }
-
-.parallax-fg-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh + 10vw);
-  min-height: 900px;
-  margin: 0px;
-  top: -10vw;
-  position: relative;
-  z-index: 1;
-  border-bottom: 4px solid #0070C0;
-}
-
-.section-2 {
-  top: -20vw
-}
-
-.section-3 {
-  top: -30vw
-}
-
-.section-4 {
-  top: -40vw;
-  height: calc(100vh + 20vw);
-  border-bottom: none;
-  padding-bottom: -200px;
+.title-left {
+  text-align: left;
 }
 .left-aligned {
   background-image: url('/img/divider_left_aligned4.svg');
@@ -105,6 +82,9 @@ p {
   background-repeat: no-repeat;
 }
 
+.title-right {
+  text-align: right;
+}
 .right-aligned {
   background-image: url('/img/divider_right_aligned4.svg');
   background-size: 100%;
@@ -118,18 +98,13 @@ h2 {
   font-size: 3rem;
 }
 
-.title-left {
-  text-align: left;
-}
-.title-right {
-  text-align: right;
-}
 .white {
   background-color: white;
   padding: 30px;
 }
 .full-height {
   height: 100%;
+  flex-grow: 2;
 }
 
 /* ABOUT */
