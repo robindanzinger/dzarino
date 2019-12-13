@@ -12,6 +12,43 @@ body {
   color: #303030;
   margin: 0;
   padding 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  border: 2px solid yellow;
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  z-index: 10;
+  justify-content: flex-end;
+  opacity: 0.7;
+  align-items: center;
+  transition: 0.7;
+  list-style-type: none;
+  background-color: white;
+}
+.nav-menu li {
+  margin: 0px 12px;
+}
+
+@media (max-width: 3000px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 3000px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
 html {
@@ -22,6 +59,7 @@ html {
 .container {
   height: 100vh;
   width: 100vw;
+  max-width: 2000px;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 100px;
@@ -105,16 +143,12 @@ h2 {
   height: 100%;
   flex-grow: 2;
 }
-.dis-70 {
-  padding-bottom: 170px;
-}
 
 /* ABOUT */
 .about {
   margin: 0px;
   padding: 20px 50px;
 }
-
 
 /* CONTACT */
 .small-width {
@@ -137,6 +171,7 @@ h2 {
   font-size: 1.4rem;
   line-height: 1.2rem;
 }
+
 /* SPENDEN */
 .center {
   text-align: center;
@@ -149,4 +184,6 @@ h2 {
 .small-font {
   font-size: 1.2rem;
 }
-
+.dis-70 {
+  padding-bottom: 170px;
+}
