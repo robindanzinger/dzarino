@@ -212,17 +212,17 @@ p {
 /* SPENDEN */
 .center {
   text-align: center;
-  font-size: 2rem;
+  font-size: calc(1vw + 1.2rem);
   line-height: 1.4rem;
 }
 .middle-font {
-  font-size: 1.7rem;
+  font-size: calc(1vw + 1rem);
 }
 .small-font {
-  font-size: 1.2rem;
+  font-size: calc(1vw + 0.8rem);
 }
 .dis-70 {
-  padding-bottom: 170px;
+  padding-bottom: 10vw;
 }
 
 /* FOOTER */
