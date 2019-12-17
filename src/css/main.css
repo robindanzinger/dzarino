@@ -8,7 +8,7 @@
  * */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #303030;
   margin: 0;
   padding 0;
@@ -90,19 +90,19 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
-@media (max-width: 3000px) {
-  body {
-    font-size: 1.4rem;
-  }
+
+h1 {
+  padding: 80px;
+  margin: 0px;
+  color: white;
+  font-size: 3rem;
 }
 
-@media (max-width: 3000px) {
-  body {
-    font-size: 1.6rem;
-  }
-}
-
-html {
+h2 {
+  padding: 2vw 20px;
+  margin: 2vw 0px;
+  color: #0070c0;
+  font-size: 3rem;
 }
 
 /* MAIN SECTION */
@@ -110,7 +110,6 @@ html {
 .container {
   height: 100vh;
   width: 100vw;
-  max-width: 2000px;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 100px;
@@ -133,28 +132,22 @@ html {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  top: -150px;
-  margin-bottom: -150px;
+  top: -10vw;
+  margin-bottom: -10vw;
   display: flex;
   flex-direction: column;
 }
 .no-parallax {
   position: relative;
   width: 100%;
-  top: -150px;
-  margin-bottom: -150px;
+  top: -10vw;
+  margin-bottom: -10vw;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
 }
 .border-div {
   border-bottom: 3px solid #0070C0;
-}
-h1 {
-  padding: 80px;
-  margin: 0px;
-  color: white;
-  font-size: 3rem;
 }
 .title-image {
   background-image: url('/img/TitelBild.jpg');
@@ -185,13 +178,6 @@ p {
   background-image: url('/img/divider_right_aligned4.svg');
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-h2 {
-  padding: 2vw 20px;
-  margin: 2vw 0px;
-  color: #0070c0;
-  font-size: 3rem;
 }
 
 .white {
@@ -253,3 +239,92 @@ h2 {
   width: 100%;
   height: 240px;
 }
+
+@media (max-width: 4000px) {
+  body {
+    font-size: 5rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 9rem;
+  }
+  .about {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 2500px) {
+  body {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .about {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 2000px) {
+  body {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .about {
+    padding: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  body {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .about {
+    padding: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .about {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .about {
+    padding: 10px;
+  }
+}
+
