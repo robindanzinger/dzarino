@@ -314,12 +314,13 @@ p {
 
 @media (max-aspect-ratio: 1/1) {
   .parallax-bg {
-    height: 67%;
+    height: 80%;
+    top: -10vh;
   }
 
   .parallax-fg {
     min-height: 67vh;
-    top: -14vh;
-    margin-bottom: -14vh;
+    top: -25vh;
+    margin-bottom: -25vh;
   }
 }
