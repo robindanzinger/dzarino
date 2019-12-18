@@ -75,6 +75,17 @@ header {
 .nav-menu li {
   margin: 0px 12px;
 }
+.nav-toggle-button {
+  display: none;
+  outline: none;
+  cursor: pointer;
+}
+.nav-toggle-button:focus {
+  outline: 1px solid;
+}
+.nav-toggle-button:hover {
+  color: #0070C0;
+}
 
 a {
   color: #0070C0;
@@ -260,4 +271,43 @@ p {
 }
 .impressum {
   margin: 20px;
+}
+
+@media (max-width: 700px) {
+  .nav-menu {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: -250px;
+    height: 0px;
+    justify-content: flex-start;
+    margin-top: 0px;
+    background-color: white;
+    color: #0070C0;
+    opacity: 0;
+    flex-direction: column;
+    padding: 2rem;
+    transition: 0.9s;
+  }
+  .responsive {
+    top: 4rem;
+    opacity:1;
+    z-index: 5;
+    height: auto;
+    font-size: 7vw;
+  }
+  .responsive li {
+    margin: 1rem;
+  }
+  .nav-toggle-button {
+    position: absolute;
+    display: block;
+    border: none;
+    background-color: transparent;
+    top: 16px;
+    right: 24px;
+  }
+  .nav-toggle-button svg:hover {
+    fill: #0070C0;
+  }
 }
