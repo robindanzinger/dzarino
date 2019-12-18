@@ -223,14 +223,14 @@ p {
 /* SPENDEN */
 .center {
   text-align: center;
-  font-size: calc(1vw + 1.2rem);
+  font-size: calc(1.2vw + 1rem);
   line-height: 1.4rem;
 }
 .middle-font {
-  font-size: calc(1vw + 1rem);
+  font-size: calc(1.2vw + 0.8rem);
 }
 .small-font {
-  font-size: calc(1vw + 0.8rem);
+  font-size: calc(1.2vw + 0.6rem);
 }
 .dis-70 {
   padding-bottom: 10vw;
@@ -309,5 +309,17 @@ p {
   }
   .nav-toggle-button svg:hover {
     fill: #0070C0;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .parallax-bg {
+    height: 67%;
+  }
+
+  .parallax-fg {
+    min-height: 67vh;
+    top: -14vh;
+    margin-bottom: -14vh;
   }
 }
