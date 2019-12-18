@@ -1,6 +1,7 @@
 dest='predist/'
 pre='pre.html'
 post='post.html'
+rm -r $dest/*.*
 for page in src/Pages/* 
 do 
   filename=$dest${page##*/}
