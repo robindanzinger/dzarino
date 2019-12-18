@@ -33,10 +33,10 @@ function buildhtml() {
 }
 
 function buildImg() {
-  return gulp.src('src/Bilder/**')
+  return gulp.src('src/img/**')
     .pipe(filter(['**', '!**/*.sh']))
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/Bilder'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 exports.default = series(clean, buildjs, buildcss, buildhtml, buildImg);
