@@ -104,7 +104,7 @@ a:active {
 }
 
 h1 {
-  padding: 80px;
+  padding: 120px 80px;
   margin: 0px;
   color: white;
   font-size: calc(2.5vw + 1rem);
@@ -200,7 +200,19 @@ p {
   height: 100%;
   flex-grow: 2;
 }
-
+/* ABOUT */
+.ul-about li {
+  list-style: none;
+  margin: 1rem;
+}
+.ul-about li::before {
+  content: '';
+  display: inline-block;
+  height: calc(1vw + 0.7rem);
+  width: calc(1vw + 0.7rem);
+  background-image: url('/img/gluehbirne.png');
+  background-size: cover;
+}
 /* CONTACT */
 .contact {
   padding: 0px;
