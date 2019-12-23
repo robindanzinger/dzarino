@@ -201,6 +201,9 @@ p {
   flex-grow: 2;
 }
 /* ABOUT */
+.ul-about {
+  padding-inline-start: 0px;
+}
 .ul-about li {
   list-style: none;
   margin: 1rem;
