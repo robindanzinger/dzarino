@@ -5,3 +5,4 @@
 /predist
 /tmp
 deploy.sh
+*.vim

@@ -103,21 +103,27 @@ a:active {
   text-decoration: underline;
 }
 
+/* MAIN SECTION */
+
 h1 {
-  padding: 120px 80px;
-  margin: 0px;
+  top: 80px;
+  left: 40px;
+  text-shadow: 1px 1px #bbbbbb;
+  position: absolute;
   color: white;
   font-size: calc(2.5vw + 1rem);
 }
 
 h2 {
   padding: 2vw 20px;
-  margin: 2vw 0px;
+  margin: 2vw 0 0 0;
   color: #0070c0;
   font-size: calc(2.5vw + 1rem);
 }
 
-/* MAIN SECTION */
+h3 {
+  margin-top: 0;
+}
 
 .container {
   height: 100vh;
@@ -164,6 +170,11 @@ h2 {
 .title-image {
   background-image: url('/img/TitelBild.jpg');
 }
+.title-image-cover {
+  background-color: #0070C0;
+  opacity: 0.1;
+  height: 100%;
+}
 .projects-image {
   background-image: url('/img/projekte.jpg');
 }
@@ -194,11 +205,11 @@ p {
 
 .white {
   background-color: white;
-  padding: 30px;
 }
 .full-height {
   height: 100%;
   flex-grow: 2;
+  padding: 30px;
 }
 /* ABOUT */
 .ul-about {
@@ -215,6 +226,12 @@ p {
   width: calc(1vw + 0.7rem);
   background-image: url('/img/gluehbirne.png');
   background-size: cover;
+}
+
+/* PROJEKTE */
+
+.project-space {
+  margin-top: 3rem;
 }
 /* CONTACT */
 .contact {
@@ -239,17 +256,20 @@ p {
 .center {
   text-align: center;
   font-size: calc(1.2vw + 1rem);
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 .middle-font {
   font-size: calc(1.2vw + 0.8rem);
 }
 .small-font {
+  padding-top: 2rem;
   font-size: calc(1.2vw + 0.6rem);
 }
 .dis-70 {
-  padding-bottom: 10vw;
+  padding-bottom: 20vw;
 }
+
+/* MITGLIEDSCHAFT */
 
 /* FOOTER */
 .bluebg {
