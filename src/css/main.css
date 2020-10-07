@@ -172,7 +172,7 @@ h3 {
   border-bottom: 3px solid #0070C0;
 }
 .title-image {
-  background-image: url('/img/TitelBild.jpg');
+  background-image: url('/img/TitelBild_1200.jpg');
 }
 .title-image-cover {
   background-color: #0070C0;
@@ -180,10 +180,10 @@ h3 {
   height: 100%;
 }
 .projects-image {
-  background-image: url('/img/projekte.jpg');
+  background-image: url('/img/projekte_1200.jpg');
 }
 .help-image {
-  background-image: url('/img/help2.jpg');
+  background-image: url('/img/help2_1200.jpg');
 }
 
 p {
@@ -265,18 +265,14 @@ p {
   margin: 3vw;
 }
 .column p {
-  font-size: calc(1vw + 0.6);
+  font-size: calc(1vw + 0.6rem);
   line-height: 1.2rem;
 }
 
 /* SPENDEN */
 .center {
   text-align: center;
-  font-size: calc(1.2vw + 1rem);
   line-height: 1.2rem;
-}
-.middle-font {
-  font-size: calc(1.2vw + 0.8rem);
 }
 .small-font {
   padding-top: 1.5rem;
@@ -333,7 +329,17 @@ p {
 .impressum {
   margin: 20px;
 }
-
+@media (max-width: 1000px) {
+  .title-image {
+    background-image: url('/img/TitelBild_600.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_600.jpg');
+  }
+  .help-image {
+    background-image: url('/img/help2_600.jpg');
+  }
+}
 @media (max-width: 850px) {
   .nav-menu {
     position: fixed;
@@ -376,6 +382,17 @@ p {
   }
 }
 
+@media (max-width: 500px) {
+  .title-image {
+    background-image: url('/img/TitelBild_300.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_300.jpg');
+  }
+  .help-image {
+    background-image: url('/img/help2_300.jpg');
+  }
+}
 @media (max-aspect-ratio: 1/1) {
   .parallax-bg {
     height: 80%;
