@@ -183,7 +183,7 @@ h3 {
   background-image: url('/img/projekte_1200.jpg');
 }
 .help-image {
-  background-image: url('/img/help2_1200.jpg');
+  background-image: url('/img/donate_1200.jpg');
 }
 
 p {
@@ -337,9 +337,10 @@ p {
     background-image: url('/img/projekte_600.jpg');
   }
   .help-image {
-    background-image: url('/img/help2_600.jpg');
+    background-image: url('/img/donate_600.jpg');
   }
 }
+
 @media (max-width: 850px) {
   .nav-menu {
     position: fixed;
@@ -361,10 +362,8 @@ p {
     opacity:1;
     z-index: 5;
     height: auto;
-    font-size: 7vw;
-  }
-  .responsive li {
-    margin: 1rem;
+    font-size: calc(5vh + 0.6rem);
+    line-height: 2em;
   }
   .nav-toggle-button {
     position: absolute;
@@ -382,6 +381,12 @@ p {
   }
 }
 
+@media (max-height: 400px) {
+  .responsive {
+    line-height: 1.5em;
+  }
+}
+
 @media (max-width: 500px) {
   .title-image {
     background-image: url('/img/TitelBild_300.jpg');
@@ -390,9 +395,10 @@ p {
     background-image: url('/img/projekte_300.jpg');
   }
   .help-image {
-    background-image: url('/img/help2_300.jpg');
+    background-image: url('/img/donate_300.jpg');
   }
 }
+
 @media (max-aspect-ratio: 1/1) {
   .parallax-bg {
     height: 80%;
