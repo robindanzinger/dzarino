@@ -397,6 +397,14 @@ p {
   .help-image {
     background-image: url('/img/donate_300.jpg');
   }
+  h2 {
+    font-size: calc(2vw + 0.8rem);
+  }
+  h2.small {
+    margin-top: 14px;
+    font-size: calc(1vw + 0.8rem);
+    font-weight: bold;
+  }
 }
 
 @media (max-aspect-ratio: 1/1) {
