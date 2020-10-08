@@ -39,5 +39,12 @@ function buildImg() {
     .pipe(gulp.dest('dist/img'))
 }
 
-exports.default = series(clean, buildjs, buildcss, buildhtml, buildImg);
+function buildImg2() {
+  return gulp.src('src/icon/**')
+    .pipe(filter(['**/*.jpg', '**/*.png', '**/*.svg']))
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/icon'))
+}
+
+exports.default = series(clean, buildjs, buildcss, buildhtml, buildImg, buildImg2);
 exports.clean = clean;
