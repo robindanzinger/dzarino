@@ -96,11 +96,8 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: underline;
+a:hover, a:active {
+  text-shadow: 2px 0px 14px #137ac4;
 }
 
 /* MAIN SECTION */
@@ -323,11 +320,13 @@ p {
 }
 
 /* IMPRESSUM */
-.impressum h1 {
+.impressum h1{
   color: black;
+  text-shadow: none;
+  position: static;
 }
 .impressum {
-  margin: 20px;
+  margin: 80px 20px;
 }
 @media (max-width: 1000px) {
   .title-image {
