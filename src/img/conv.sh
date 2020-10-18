@@ -10,11 +10,11 @@
    newFilename=${filename}_900.jpg
  
 #  convert -resize 1800x1800 $file ${filename}_1800.jpg
-  convert -resize 1200x1200 $file ${filename}_1200.jpg
+#  convert -resize 1200x1200 $file ${filename}_1200.jpg
 #  convert -resize 900x900 $file ${filename}_900.jpg
-  convert -resize 600x600 $file ${filename}_600.jpg
-  convert -resize 300x300 $file ${filename}_300.jpg
-#  convert -resize 400x400 $file ${filename}_400.jpg
+#  convert -resize 600x600 $file ${filename}_600.jpg
+#  convert -resize 300x300 $file ${filename}_300.jpg
+  convert -resize 400x400 $file ${filename}_400.jpg
  
  
    if [ $width -gt $height ] 

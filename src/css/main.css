@@ -328,7 +328,8 @@ p {
 .impressum {
   margin: 80px 20px;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 600px) {
   .title-image {
     background-image: url('/img/TitelBild_600.jpg');
   }
@@ -386,15 +387,15 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .title-image {
-    background-image: url('/img/TitelBild_300.jpg');
+    background-image: url('/img/TitelBild_400.jpg');
   }
   .projects-image {
-    background-image: url('/img/projekte_300.jpg');
+    background-image: url('/img/projekte_400.jpg');
   }
   .help-image {
-    background-image: url('/img/donate_300.jpg');
+    background-image: url('/img/donate_400.jpg');
   }
   h2 {
     font-size: calc(2vw + 0.8rem);
@@ -406,15 +407,49 @@ p {
   }
 }
 
+@media (max-aspect-ratio: 7/5) {
+  .title-image {
+    background-image: url('/img/TitelBild_h_1200.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_h_1200.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_h_1200.jpg');
+  }
+}
 @media (max-aspect-ratio: 1/1) {
   .parallax-bg {
     height: 80%;
     top: -10vh;
   }
-
   .parallax-fg {
     min-height: 67vh;
     top: -25vh;
     margin-bottom: -25vh;
+  }
+}
+
+@media (max-aspect-ratio: 6/5) and (max-width: 800px) {
+  .title-image {
+    background-image: url('/img/TitelBild_h_600.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_h_600.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_h_600.jpg');
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 400px) {
+  .title-image {
+    background-image: url('/img/TitelBild_h_400.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_h_400.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_h_400.jpg');
   }
 }
