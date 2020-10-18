@@ -419,7 +419,7 @@ p {
   }
 }
 
-@media (max-aspect-ratio: 7/5) and (max-width: 800px) {
+@media (max-aspect-ratio: 7/5) and (max-width: 600px) {
   .title-image {
     background-image: url('/img/TitelBild_h_600.jpg');
   }
@@ -455,3 +455,38 @@ p {
   }
 }
 
+@media (max-aspect-ratio: 5/7) {
+  .title-image {
+    background-image: url('/img/TitelBild_hh_1200.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_hh_1200.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_hh_1200.jpg');
+  }
+}
+
+@media (max-aspect-ratio: 5/7) and (max-width: 600px) {
+  .title-image {
+    background-image: url('/img/TitelBild_hh_600.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_hh_600.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_hh_600.jpg');
+  }
+}
+
+@media (max-aspect-ratio: 5/7) and (max-width: 400px) {
+  .title-image {
+    background-image: url('/img/TitelBild_hh_400.jpg');
+  }
+  .projects-image {
+    background-image: url('/img/projekte_hh_400.jpg');
+  }
+  .help-image {
+    background-image: url('/img/donate_hh_400.jpg');
+  }
+}
